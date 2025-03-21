@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import NavbarMain from '@/components/navigation/NavbarMain';
 import FooterMain from '@/components/navigation/FooterMain';
+import { AuthProvider } from '@/context/AuthContext';
 
 export const metadata = {
   title: {
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr" data-theme="light">
       <body className="min-h-screen flex flex-col">
-        <NavbarMain />
-        <div className="flex-grow">
-          {children}
-        </div>
-        <FooterMain />
+        <AuthProvider>
+          <NavbarMain />
+          <div className="flex-grow">
+            {children}
+          </div>
+          <FooterMain />
+        </AuthProvider>
       </body>
     </html>
   );

@@ -4,44 +4,44 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Ahmet Yılmaz",
+      name: "Ahmed Johnson",
       position: "CTO, Tech Innovations",
-      quote: "ASP Solutions ile bulut altyapımıza geçiş sürecimiz sorunsuz ve verimli oldu. Teknik ekipleri her adımda yanımızdaydı.",
+      quote: "Our transition to cloud infrastructure with ASP Solutions was seamless and efficient. Their technical team was with us every step of the way.",
       image: "/images/testimonials/user1.jpg",
       rating: 5
     },
     {
       id: 2,
-      name: "Zeynep Kaya",
+      name: "Zoe Carter",
       position: "CEO, Strategy Partners",
-      quote: "Danışmanlık hizmetleri sayesinde dijital dönüşüm sürecimizi çok daha hızlı tamamladık. Sonuçlardan çok memnunuz.",
+      quote: "Thanks to their consulting services, we completed our digital transformation process much faster. We are very satisfied with the results.",
       image: "/images/testimonials/user2.jpg",
       rating: 5
     },
     {
       id: 3,
-      name: "Mehmet Demir",
-      position: "E-Ticaret Müdürü, ShopEasy",
-      quote: "E-ticaret altyapımızı tamamen yeniledik ve satışlarımız %40 arttı. Teknik destek ekibi her zaman yanımızda.",
+      name: "Michael Steel",
+      position: "E-Commerce Manager, ShopEasy",
+      quote: "We completely renovated our e-commerce infrastructure and our sales increased by 40%. The technical support team is always by our side.",
       image: "/images/testimonials/user3.jpg",
       rating: 4
     }
   ];
 
-  // Yıldız oluşturma fonksiyonu
+  // Star rendering function
   function renderStars(rating) {
     const stars = [];
     
     for (let i = 0; i < 5; i++) {
       if (i < rating) {
-        // Dolu yıldız
+        // Full star
         stars.push(
           <svg key={i} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
           </svg>
         );
       } else {
-        // Boş yıldız
+        // Empty star
         stars.push(
           <svg key={i} className="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
@@ -57,9 +57,9 @@ export default function Testimonials() {
     <section className="py-16 bg-base-200">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-3">Müşterilerimiz Ne Diyor?</h2>
+          <h2 className="mb-3">What Our Customers Say</h2>
           <p className="text-lg max-w-2xl mx-auto text-base-content/80">
-            Başarı hikayelerimizi ve müşteri deneyimlerini keşfedin
+            Discover our success stories and customer experiences
           </p>
         </div>
 
