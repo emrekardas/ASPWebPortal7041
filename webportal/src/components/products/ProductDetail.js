@@ -8,7 +8,7 @@ export default function ProductDetail({ product }) {
   const [quantity, setQuantity] = useState(1);
   const [activeImage, setActiveImage] = useState(product.image);
   
-  // Miktar değiştiğinde çağrılır
+  // Called when quantity changes
   const handleQuantityChange = (value) => {
     const newQuantity = quantity + value;
     if (newQuantity >= 1 && newQuantity <= product.stock) {
@@ -16,15 +16,15 @@ export default function ProductDetail({ product }) {
     }
   };
   
-  // Sepete ekle butonuna tıklandığında
+  // When add to cart button is clicked
   const handleAddToCart = () => {
-    console.log(`${product.name} sepete eklendi. Miktar: ${quantity}`);
-    // Gerçek uygulamada burada sepet state'ini güncelleme fonksiyonu çağrılır
+    console.log(`${product.name} added to cart. Quantity: ${quantity}`);
+    // In real app, this would update cart state
   };
   
   return (
     <div className="flex flex-col md:flex-row gap-8">
-      {/* Ürün görselleri */}
+      {/* Product images */}
       <div className="w-full md:w-1/2">
         <div className="relative h-96 w-full rounded-lg overflow-hidden">
           <Image 
@@ -36,7 +36,7 @@ export default function ProductDetail({ product }) {
           />
         </div>
         
-        {/* Ürün galerisi */}
+        {/* Product gallery */}
         <div className="mt-4 flex space-x-4 overflow-x-auto pb-2">
           <div 
             onClick={() => setActiveImage(product.image)}
@@ -59,7 +59,7 @@ export default function ProductDetail({ product }) {
             >
               <Image 
                 src={img}
-                alt={`${product.name} - görsel ${index + 1}`}
+                alt={`${product.name} - image ${index + 1}`}
                 className="object-cover"
                 fill
                 sizes="80px"
@@ -69,7 +69,7 @@ export default function ProductDetail({ product }) {
         </div>
       </div>
       
-      {/* Ürün bilgileri */}
+      {/* Product information */}
       <div className="w-full md:w-1/2">
         <div className="mb-2">
           <span className="badge badge-accent text-xs">{product.category}</span>
@@ -86,7 +86,7 @@ export default function ProductDetail({ product }) {
           </div>
           <span className="text-sm text-gray-500">|</span>
           <span className={`text-sm ${product.stock > 0 ? 'text-green-600' : 'text-red-600'}`}>
-            {product.stock > 0 ? `${product.stock} adet stokta` : 'Stokta yok'}
+            {product.stock > 0 ? `${product.stock} in stock` : 'Out of stock'}
           </span>
         </div>
         
@@ -96,20 +96,20 @@ export default function ProductDetail({ product }) {
         
         <p className="text-gray-700 mb-8">{product.description}</p>
         
-        {/* Ürün Detay Sekmeleri */}
+        {/* Product Detail Tabs */}
         <Tab.Group>
           <Tab.List className="flex space-x-1 rounded-xl bg-blue-100 p-1 mb-4">
             <Tab className={({ selected }) =>
               `w-full rounded-lg py-2 text-sm font-medium leading-5 text-blue-700 
               ${selected ? 'bg-white shadow' : 'hover:bg-white/[0.12]'}`
             }>
-              Özellikler
+              Specifications
             </Tab>
             <Tab className={({ selected }) =>
               `w-full rounded-lg py-2 text-sm font-medium leading-5 text-blue-700 
               ${selected ? 'bg-white shadow' : 'hover:bg-white/[0.12]'}`
             }>
-              Detaylar
+              Details
             </Tab>
           </Tab.List>
           <Tab.Panels className="mb-8">
@@ -133,7 +133,7 @@ export default function ProductDetail({ product }) {
           </Tab.Panels>
         </Tab.Group>
         
-        {/* Satın alma seçenekleri */}
+        {/* Purchase options */}
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="flex items-center border rounded-md">
             <button 
@@ -161,7 +161,7 @@ export default function ProductDetail({ product }) {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            Sepete Ekle
+            Add to Cart
           </button>
           
           <button className="btn btn-outline">

@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "name": "Enterprise SaaS Solution",
+    "description": "Customized cloud-based SaaS solution for your company with advanced features and scalability options. Perfect for growing businesses that need reliable software infrastructure.",
+    "price": 12999.99,
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1955&q=80",
+    "category": "Software",
+    "rating": "4.9",
+    "stock": 10,
+    "gallery": [
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Manufacturer", "value": "ASP Technologies" },
+      { "name": "Model", "value": "ASP-1001" },
+      { "name": "Warranty", "value": "24 Months" },
+      { "name": "Condition", "value": "New" }
+    ],
+    "details": [
+      "Advanced data processing capabilities",
+      "Multi-tenant architecture",
+      "99.9% uptime guarantee",
+      "Regular security updates",
+      "Full API access"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Business Analysis Package",
+    "description": "Comprehensive business analysis and consulting service with actionable insights and implementation strategies tailored for your organization.",
+    "price": 8499.50,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Service",
+    "rating": "4.7",
+    "stock": 5,
+    "gallery": [
+      "https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1664575599730-0814817939de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1664575599736-c5272a839152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Provider", "value": "ASP Consulting" },
+      { "name": "Duration", "value": "6 Months" },
+      { "name": "Includes", "value": "5 On-site Sessions" },
+      { "name": "Reports", "value": "Monthly" }
+    ],
+    "details": [
+      "Market analysis and competitor research",
+      "Process optimization recommendations",
+      "Cost reduction strategies",
+      "Growth opportunity identification",
+      "Implementation support"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cloud Data Storage",
+    "description": "Secure and scalable cloud storage solution for enterprise data with advanced encryption and automated backup systems.",
+    "price": 4999.90,
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Hardware",
+    "rating": "4.5",
+    "stock": 15,
+    "gallery": [
+      "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1828&q=80",
+      "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Storage", "value": "10TB" },
+      { "name": "Encryption", "value": "AES-256" },
+      { "name": "Backup Frequency", "value": "Daily" },
+      { "name": "Support", "value": "24/7" }
+    ],
+    "details": [
+      "Automatic data replication",
+      "Geographic redundancy",
+      "Disaster recovery options",
+      "Custom retention policies",
+      "Compliance certifications"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cybersecurity Package",
+    "description": "Comprehensive cybersecurity protection for your corporate network including threat detection, prevention, and response services.",
+    "price": 9999.99,
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "category": "Software",
+    "rating": "4.8",
+    "stock": 7,
+    "gallery": [
+      "https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1682&q=80",
+      "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Protection", "value": "Network & Endpoint" },
+      { "name": "Monitoring", "value": "Real-time" },
+      { "name": "Updates", "value": "Automatic" },
+      { "name": "Compliance", "value": "GDPR, ISO 27001" }
+    ],
+    "details": [
+      "Advanced threat protection",
+      "Vulnerability assessments",
+      "Penetration testing",
+      "Security awareness training",
+      "Incident response team"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Server Infrastructure",
+    "description": "High-performance server infrastructure with load balancing and redundancy features for mission-critical applications.",
+    "price": 15999.00,
+    "image": "https://images.unsplash.com/photo-1586772002345-339f8042a777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Hardware",
+    "rating": "4.6",
+    "stock": 3,
+    "gallery": [
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1682&q=80",
+      "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1676&q=80",
+      "https://images.unsplash.com/photo-1520869562399-e772f042f422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80"
+    ],
+    "specifications": [
+      { "name": "CPU", "value": "64-core Intel Xeon" },
+      { "name": "RAM", "value": "256GB DDR4" },
+      { "name": "Storage", "value": "8TB SSD RAID" },
+      { "name": "Network", "value": "10Gbps Redundant" }
+    ],
+    "details": [
+      "Rack-mountable 2U configuration",
+      "Dual power supplies",
+      "Remote management interface",
+      "3-year next-business-day support",
+      "Custom configuration options"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Database Optimization",
+    "description": "Performance tuning and optimization services for enterprise databases with detailed analysis and implementation.",
+    "price": 6499.75,
+    "image": "https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Service",
+    "rating": "4.7",
+    "stock": 8,
+    "gallery": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1633613286991-611fe7125fdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Database Types", "value": "SQL, NoSQL" },
+      { "name": "Duration", "value": "2-4 Weeks" },
+      { "name": "Deliverables", "value": "Performance Report" },
+      { "name": "Support", "value": "30 Days Post-Implementation" }
+    ],
+    "details": [
+      "Query optimization",
+      "Index strategy development",
+      "Data structure improvements",
+      "Caching implementation",
+      "Performance monitoring setup"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Networking Equipment Bundle",
+    "description": "Enterprise-grade networking equipment bundle including routers, switches, and access points for complete infrastructure deployment.",
+    "price": 7899.00,
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Hardware",
+    "rating": "4.5",
+    "stock": 6,
+    "gallery": [
+      "https://images.unsplash.com/photo-1648554830009-3f90b605633f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1712094369399-1a3ba9b9b3eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80",
+      "https://images.unsplash.com/photo-1614598943918-49aa1b56d14c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Router", "value": "ASP NR-9000" },
+      { "name": "Switches", "value": "2x 48-Port Managed" },
+      { "name": "Access Points", "value": "5x WiFi 6" },
+      { "name": "Warranty", "value": "3 Years" }
+    ],
+    "details": [
+      "Layer 3 routing capabilities",
+      "Power over Ethernet (PoE) support",
+      "VLAN configuration",
+      "Centralized management",
+      "Security features including IDS/IPS"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Software Development",
+    "description": "Custom software development services for enterprise applications with full lifecycle support from requirements to deployment.",
+    "price": 11499.99,
+    "image": "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Software",
+    "rating": "4.9",
+    "stock": 12,
+    "gallery": [
+      "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Languages", "value": "JavaScript, Python, Java" },
+      { "name": "Methodology", "value": "Agile/Scrum" },
+      { "name": "Team Size", "value": "4-6 Developers" },
+      { "name": "Maintenance", "value": "12 Months Included" }
+    ],
+    "details": [
+      "Requirements analysis and architecture design",
+      "Frontend and backend development",
+      "Quality assurance and testing",
+      "Deployment and integration support",
+      "Knowledge transfer and documentation"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Enterprise Backup Solution",
+    "description": "Comprehensive data backup and recovery solution for enterprise environments with advanced features and multi-site support.",
+    "price": 5999.00,
+    "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Software",
+    "rating": "4.6",
+    "stock": 9,
+    "gallery": [
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1682&q=80",
+      "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80",
+      "https://images.unsplash.com/photo-1593642532781-03e79bf5bec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+    ],
+    "specifications": [
+      { "name": "Capacity", "value": "Up to 100TB" },
+      { "name": "Backup Speed", "value": "10TB/hour" },
+      { "name": "Recovery Options", "value": "Full, Incremental, File" },
+      { "name": "Retention Policy", "value": "Customizable" }
+    ],
+    "details": [
+      "Block-level deduplication",
+      "End-to-end encryption",
+      "Automated backup verification",
+      "Cloud integration options",
+      "Disaster recovery planning"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "IT Consultancy Services",
+    "description": "Strategic IT consultancy services to align technology with business objectives and optimize existing infrastructure and processes.",
+    "price": 7499.50,
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Service",
+    "rating": "4.8",
+    "stock": 20,
+    "gallery": [
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1573497491765-55d5afb0b637?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Consultants", "value": "Senior Level" },
+      { "name": "Engagement", "value": "3-6 Months" },
+      { "name": "Deliverables", "value": "Strategic Roadmap" },
+      { "name": "Follow-up", "value": "Quarterly Reviews" }
+    ],
+    "details": [
+      "IT strategy development",
+      "Infrastructure assessment",
+      "Technology stack recommendations",
+      "Digital transformation planning",
+      "ROI analysis for technology investments"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Network Security Appliance",
+    "description": "Enterprise-grade security appliance for network protection with advanced threat prevention, detection, and response capabilities.",
+    "price": 8999.00,
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "category": "Hardware",
+    "rating": "4.7",
+    "stock": 5,
+    "gallery": [
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1648554830009-3f90b605633f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1605457212788-86ee33cdf058?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+    ],
+    "specifications": [
+      { "name": "Throughput", "value": "10Gbps" },
+      { "name": "Ports", "value": "12x 1GbE, 4x 10GbE" },
+      { "name": "Features", "value": "Firewall, IPS, VPN" },
+      { "name": "Form Factor", "value": "1U Rack Mount" }
+    ],
+    "details": [
+      "Deep packet inspection",
+      "Intrusion prevention system",
+      "Malware protection",
+      "SSL/TLS inspection",
+      "Advanced threat intelligence integration"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cloud Migration Service",
+    "description": "End-to-end cloud migration service for moving your applications and infrastructure to public, private, or hybrid cloud environments.",
+    "price": 9499.00,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    "category": "Service",
+    "rating": "4.6",
+    "stock": 10,
+    "gallery": [
+      "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1642543348745-232024de5bee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1830&q=80",
+      "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "specifications": [
+      { "name": "Platforms", "value": "AWS, Azure, GCP" },
+      { "name": "Assessment", "value": "Included" },
+      { "name": "Migration Types", "value": "Lift & Shift, Re-platform" },
+      { "name": "Timeline", "value": "3-6 Months" }
+    ],
+    "details": [
+      "Infrastructure assessment",
+      "Migration strategy development",
+      "Workload optimization",
+      "Data transfer and validation",
+      "Post-migration support"
+    ]
+  }
+]

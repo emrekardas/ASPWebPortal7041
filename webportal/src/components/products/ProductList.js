@@ -5,17 +5,7 @@ import ProductCard from './ProductCard';
 import Pagination from '../ui/Pagination';
 import Loading from '../ui/Loading';
 import { useRouter, usePathname } from 'next/navigation';
-
-// Mock data - would be replaced with API call
-const mockProducts = Array.from({ length: 24 }, (_, i) => ({
-  id: i + 1,
-  name: `Ürün ${i + 1}`,
-  description: 'Bu ürün açıklamasıdır. Farklı ürün özellikleri burada listelenebilir.',
-  price: Math.floor(Math.random() * 1000) + 100,
-  image: `https://picsum.photos/400/300`,
-  category: ['Yazılım', 'Donanım', 'Hizmet'][i % 3],
-  rating: (Math.random() * 5).toFixed(1),
-}));
+import productService from '@/utils/productService';
 
 export default function ProductList({ category, sort, page = 1, fallback }) {
   const [products, setProducts] = useState([]);
@@ -29,33 +19,24 @@ export default function ProductList({ category, sort, page = 1, fallback }) {
     const fetchProducts = async () => {
       setLoading(true);
       
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      // Filter products by category if specified
-      let filteredProducts = [...mockProducts];
-      if (category) {
-        filteredProducts = filteredProducts.filter(p => p.category === category);
+      try {
+        // Use the product service to get filtered products
+        const result = await productService.getFilteredProducts({
+          category,
+          sort,
+          page,
+          itemsPerPage
+        });
+        
+        setProducts(result.products);
+        setTotalPages(result.totalPages);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setProducts([]);
+        setTotalPages(1);
+      } finally {
+        setLoading(false);
       }
-      
-      // Sort products if specified
-      if (sort === 'price-low') {
-        filteredProducts.sort((a, b) => a.price - b.price);
-      } else if (sort === 'price-high') {
-        filteredProducts.sort((a, b) => b.price - a.price);
-      } else if (sort === 'rating') {
-        filteredProducts.sort((a, b) => b.rating - a.rating);
-      }
-      
-      // Calculate pagination
-      setTotalPages(Math.ceil(filteredProducts.length / itemsPerPage));
-      
-      // Get products for current page
-      const startIndex = (page - 1) * itemsPerPage;
-      const paginatedProducts = filteredProducts.slice(startIndex, startIndex + itemsPerPage);
-      
-      setProducts(paginatedProducts);
-      setLoading(false);
     };
     
     fetchProducts();
@@ -78,7 +59,7 @@ export default function ProductList({ category, sort, page = 1, fallback }) {
   if (products.length === 0) {
     return (
       <div className="text-center p-8">
-        <p className="text-xl text-gray-600">Aramanıza uygun ürün bulunamadı.</p>
+        <p className="text-xl text-gray-600">No products found matching your search.</p>
       </div>
     );
   }

@@ -1,49 +1,47 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import CardProduct from '../cards/CardProduct';
-
-// Example mock data
-const featuredProducts = [
-  {
-    id: 1,
-    name: "Enterprise SaaS Solution",
-    description: "Customized cloud-based SaaS solution for your company",
-    price: 12999.99,
-    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1955&q=80",
-    category: "Software",
-    stock: 10
-  },
-  {
-    id: 2,
-    name: "Business Analysis Package",
-    description: "Comprehensive business analysis and consulting service",
-    price: 8499.50,
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    category: "Service",
-    stock: 5
-  },
-  {
-    id: 3,
-    name: "Cloud Data Storage",
-    description: "Secure and scalable cloud storage solution",
-    price: 4999.90,
-    imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    category: "Infrastructure",
-    stock: 15
-  },
-  {
-    id: 4,
-    name: "Cybersecurity Package",
-    description: "Comprehensive cybersecurity protection for your corporate network",
-    price: 9999.99,
-    imageUrl: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    category: "Security",
-    stock: 7
-  }
-];
+import productService from '@/utils/productService';
 
 export default function FeaturedProducts() {
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadFeaturedProducts = async () => {
+      try {
+        const products = await productService.getFeaturedProducts();
+        setFeaturedProducts(products);
+      } catch (error) {
+        console.error('Error loading featured products:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadFeaturedProducts();
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="py-16 px-4 bg-base-100">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-3xl font-bold">Featured Products</h2>
+            <div className="btn btn-outline btn-disabled">Loading...</div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[...Array(4)].map((_, index) => (
+              <div key={index} className="card bg-base-200 shadow-md h-[350px] animate-pulse"></div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-16 px-4 bg-base-100">
       <div className="container mx-auto">

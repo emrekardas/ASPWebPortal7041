@@ -10,12 +10,12 @@ export default function NavbarMain() {
   const pathname = usePathname();
   
   const navLinks = [
-    { name: "Ana Sayfa", path: "/" },
-    { name: "Ürünler", path: "/products" },
-    { name: "Danışmanlık", path: "/consultancy" },
-    { name: "Eğitimler", path: "/trainings" },
-    { name: "Hakkımızda", path: "/about" },
-    { name: "İletişim", path: "/contact" },
+    { name: "Home Page", path: "/" },
+    { name: "Products", path: "/products" },
+    { name: "Consultancy", path: "/consultancy" },
+    { name: "Trainings", path: "/trainings" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (

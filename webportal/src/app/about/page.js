@@ -8,25 +8,25 @@ export const metadata = {
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: 'John Smith',
+      name: 'Henry Onilude',
       position: 'Founder & CEO',
       image: '/images/team/placeholder-1.jpg',
       bio: '10+ years of experience in software and cloud technologies'
     },
     {
-      name: 'Emily Parker',
+      name: 'Emre Kardas',
       position: 'CTO',
       image: '/images/team/placeholder-2.jpg',
       bio: 'Expert in data science and machine learning'
     },
     {
-      name: 'Michael Johnson',
+      name: 'Balbir Singh',
       position: 'Product Manager',
       image: '/images/team/placeholder-3.jpg',
       bio: 'Specialist in user experience and product strategy'
     },
     {
-      name: 'Sarah Wilson',
+      name: 'Sanjey Sivakumar',
       position: 'Customer Relations Director',
       image: '/images/team/placeholder-4.jpg',
       bio: 'Responsible for customer success and strategic partnerships'

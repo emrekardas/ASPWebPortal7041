@@ -1,17 +1,22 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function CardProduct({ product }) {
-  const { id, name, description, price, imageUrl, category, stock } = product;
+  const { id, name, description, price, image, category, stock } = product;
   const [isHovered, setIsHovered] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    // Burada sepete ekleme mantığı olacak
-    console.log("Ürün sepete eklendi:", product);
+    // Cart addition logic will be here
+    console.log("Product added to cart:", product);
   };
+
+  // Fallback image
+  const fallbackImage = 'https://placehold.co/400x300?text=ASP+Solutions';
 
   return (
     <div 
@@ -20,11 +25,16 @@ export default function CardProduct({ product }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <figure className="relative h-48 w-full overflow-hidden">
-        <div className={`absolute inset-0 bg-cover bg-center transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
-          style={{
-            backgroundImage: `url(${imageUrl || 'https://placehold.co/400x300?text=ASP+Solutions'})`,
-          }}
-        ></div>
+        <div className="relative h-full w-full">
+          <Image 
+            src={imageError ? fallbackImage : (image || fallbackImage)} 
+            alt={name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className={`object-cover transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
+            onError={() => setImageError(true)}
+          />
+        </div>
         <div className="absolute top-2 right-2">
           <span className="badge badge-primary">{category}</span>
         </div>
@@ -32,12 +42,12 @@ export default function CardProduct({ product }) {
       <div className="card-body">
         <h2 className="card-title">
           {name}
-          {stock <= 5 && <div className="badge badge-secondary">Sınırlı Stok!</div>}
+          {stock <= 5 && <div className="badge badge-secondary">Limited Stock!</div>}
         </h2>
         <p className="line-clamp-2">{description}</p>
         <div className="flex justify-between items-center mt-4">
           <span className="text-xl font-bold">{price.toLocaleString('tr-TR')} ₺</span>
-          <Link href={`/products/${id}`} className="text-primary hover:underline text-sm">Detaylar</Link>
+          <Link href={`/products/${id}`} className="text-primary hover:underline text-sm">Details</Link>
         </div>
         <div className="card-actions justify-end mt-4">
           <button className="btn btn-primary w-full" onClick={handleAddToCart}>

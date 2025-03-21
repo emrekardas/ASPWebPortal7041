@@ -4,17 +4,17 @@ import { useState, useEffect } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
 const categories = [
-  { id: 'all', name: 'Tüm Ürünler' },
-  { id: 'Yazılım', name: 'Yazılım' },
-  { id: 'Donanım', name: 'Donanım' },
-  { id: 'Hizmet', name: 'Hizmet' }
+  { id: 'all', name: 'All Products' },
+  { id: 'Yazılım', name: 'Software' },
+  { id: 'Donanım', name: 'Hardware' },
+  { id: 'Hizmet', name: 'Service' }
 ];
 
 const sortOptions = [
-  { id: 'default', name: 'Varsayılan Sıralama' },
-  { id: 'price-low', name: 'Fiyat (Düşükten Yükseğe)' },
-  { id: 'price-high', name: 'Fiyat (Yüksekten Düşüğe)' },
-  { id: 'rating', name: 'En Yüksek Puanlı' }
+  { id: 'default', name: 'Default Sorting' },
+  { id: 'price-low', name: 'Price (Low to High)' },
+  { id: 'price-high', name: 'Price (High to Low)' },
+  { id: 'rating', name: 'Highest Rated' }
 ];
 
 export default function ProductFilters() {
@@ -102,12 +102,12 @@ export default function ProductFilters() {
   return (
     <div className="card bg-base-100 shadow-md">
       <div className="card-body">
-        <h2 className="card-title text-xl mb-4">Filtreler</h2>
+        <h2 className="card-title text-xl mb-4">Filters</h2>
         
         <div className="collapse collapse-arrow bg-base-200 mb-4">
           <input type="checkbox" defaultChecked /> 
           <div className="collapse-title font-medium">
-            Kategoriler
+            Categories
           </div>
           <div className="collapse-content">
             <ul className="menu bg-base-200">
@@ -127,7 +127,7 @@ export default function ProductFilters() {
         
         <div className="form-control mb-6">
           <label className="label">
-            <span className="label-text font-medium">Sıralama</span>
+            <span className="label-text font-medium">Sorting</span>
           </label>
           <select
             value={selectedSort}
@@ -144,7 +144,7 @@ export default function ProductFilters() {
         
         <div className="mb-6">
           <label className="label">
-            <span className="label-text font-medium">Fiyat Aralığı</span>
+            <span className="label-text font-medium">Price Range</span>
           </label>
           <div className="flex justify-between mb-2">
             <span className="text-sm">{priceRange[0]} ₺</span>
@@ -173,7 +173,7 @@ export default function ProductFilters() {
               onClick={applyFilters}
               className="btn btn-primary btn-sm"
             >
-              Fiyata Göre Filtrele
+              Filter by Price
             </button>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function ProductFilters() {
             onClick={handleResetFilters}
             className="btn btn-outline btn-block btn-sm"
           >
-            Tüm Filtreleri Temizle
+            Clear All Filters
           </button>
         </div>
       </div>

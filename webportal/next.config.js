@@ -2,16 +2,33 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['picsum.photos'],
+    domains: [
+      'images.unsplash.com',
+      'picsum.photos',
+      'placehold.co'
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        pathname: '/**',
+      }
+    ],
   },
-  // If you're using CSS modules and experiencing issues with DaisyUI:
-  // webpack: (config) => {
-  //   config.module.rules.push({
-  //     test: /\.css$/i,
-  //     use: ['postcss-loader']
-  //   });
-  //   return config;
-  // },
-};
+  experimental: {
+    optimizeFonts: true,
+    optimizeImages: true,
+  }
+}
 
 module.exports = nextConfig;
